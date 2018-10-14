@@ -11,7 +11,7 @@
 }
 
 body{
-    background: linear-gradient(rgba(52,20,20,.4), rgba(62,20,20,.4)), url('back.jpg') no-repeat;
+    background: linear-gradient(rgba(52,20,20,.4), rgba(62,20,20,.4)), url('images/back.jpg') no-repeat;
     background-size: cover;
     background-position: center;
     font-family: Lato;
@@ -131,13 +131,37 @@ i {
 .btn-roll {top: 403px;}
 .btn-hold {top: 467px;}
 
-.dice {
+.dice1 {
     position: absolute;
     left: 50%;
     top: 170px;
-    transform: translateX(-50%);
+    transform: translateX(-120%);
     height: 100px;
     box-shadow: 0 10px 60px rgba(0,0,0,.10);
+}
+
+.dice2 {
+    position: absolute;
+    left: 50%;
+    top: 170px;
+    transform: translateX(20%);
+    height: 100px;
+    box-shadow: 0 10px 60px rgba(0,0,0,.10);
+}
+
+#total {
+    position: absolute;
+    left: 30px;
+    top: 30px;
+}
+
+#total input {
+    height: 30px;
+    background: transparent;
+    padding: 10px;
+    border: none;
+    outline: none;
+    border-bottom: solid 2px #eb4d4d;
 }
 
 .winner { background: #ffffff;}

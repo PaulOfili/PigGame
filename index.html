@@ -7,10 +7,11 @@
     <title>Pig game</title>
     <link rel="stylesheet" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:100,300,600">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="pig_style.css">
     
 </head>
 <body>
+<p><a href="cancel.php?cancel=1" onclick ='return confirm("Are you sure you want to cancel this transaction ?")'>cancel</a></p>
     <div class="wrapper clearfix">
         <div class="player-0-panel active">
             <div class="player-name" id="name-0">Player 1</div>
@@ -26,7 +27,7 @@
             <div class="player-score" id="score-1">43</div>
             <div class="player-current-box">
                 <div class="player-current-label">Current</div>
-                <div class="player-current-score" id="current-1">0</div>
+                <div class="player-current-score" id="current-1">11</div>
             </div>
         </div>
 
@@ -34,9 +35,14 @@
         <button class="btn-roll"><i class="ion-ios-loop"></i>Roll dice</button>
         <button class="btn-hold"><i class="ion-ios-download-outline"></i>Hold</button>
 
-        <img src="dice-5.png" alt="Dice" class="dice">
+        <img src="images/dice-5.png" alt="Dice1" class="dice1">
+        <img src="images/dice-5.png" alt="Dice2" class="dice2">
+
+        <div id="total">
+             <input type="number" id="totalValue" placeholder="Final score">
+        </div> 
     </div>
 
-    <script src="app.js"></script>
+    <script src="pig_game.js"></script>
 </body>
 </html>
